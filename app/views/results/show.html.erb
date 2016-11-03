@@ -28,7 +28,7 @@
     </div>
   </div>
 </div>
-<h3 class="section_header">Attachments <%= link_to "Upload", "#", :class=>"pull-right button tiny thumbnail-button", data:{"reveal-id"=>"upload_form"} %><%= link_to "Generate", generate_screenshot_result_path, :method=>:post ,:class=>"pull-right button tiny thumbnail-button" %></h3>
+<h3 class="section_header">Attachments <%= link_to "Upload", "#", :class=>"pull-right button tiny thumbnail-button", data:{"reveal-id"=>"upload_form"} %></h3>
 <% image_results = @result.result_attachments.select{|x| x.attachment_content_type.match /\Aimage\/.+/ } %>
 <% if image_results.present? %>
   <h4 class="section_header">Images</h4>

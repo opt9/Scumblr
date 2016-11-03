@@ -136,7 +136,7 @@ $(function(){
   <% end %>
 </div>
 <%= link_to 'New Task', new_task_path, class: "button" if can? :create, Task %>
-<%= link_to 'Run All Enabled Tasks', run_tasks_path, class: "button alert" if can? :run, Task  %>
+<%#= link_to 'Run All Enabled Tasks', run_tasks_path, class: "button alert" if can? :run, Task  %>
 <%= content_for :sidebar do %>
   <div class="sidebar">
     <nav class="tab-bar">
